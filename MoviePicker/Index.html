@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="currentcolour">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coffee Box.">
+    <link rel="stylesheet" href="CSS/movie box.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Movie Box</title>
+</head>
+
+<body>
+    <div id="main" style="background-image: url('Images/background.jpg'); border-radius: 10px;">
+        <p class="logoDiv">
+            <a href="Welcome Page.html"><img src="Images/Logo.jpg" alt="Logo" class="logo"></a>
+        </p>
+
+        <div class="topnav">
+            <a class="active" href="Index.html">Home</a>
+            <a href="moviepicker.html">Movie Picker </a>
+            <a href="#contact">Contact</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="row1">
+            <div class="w3-content w3-section" style="max-width:220px" ;>
+                <img class="mySlides" src="Images/SpiderMan.jpg" style="width:100%">
+
+            </div>
+            <div class="w3-content w3-section" style="max-width:220px" ;>
+
+                <img class="mySlides" src="Images/IronMan3.jpg" style="width:100%">
+            </div>
+            <div class="w3-content w3-section" style="max-width:220px" ;>
+
+                <img class="mySlides" src="Images/Wrath-of-man.jpg" style="width:100%">
+            </div>
+            <div class="w3-content w3-section" style="max-width:220px" ;>
+                <img class="mySlides" src="Images/ThorRagnarok.jpg" style="width:100%">
+
+            </div>
+            <div class="w3-content w3-section" style="max-width:220px" ;>
+                <img class="mySlides" src="Images/BlackPanther.jpg" style="width:100%">
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="column">
+                <a href="https://www.youtube.com/watch?v=ryhnsHUERyo"><img src="Images/SpiderMan.jpg" alt="SpiderMan" class="images"></a>
+                <p>Spider Man ..</p>
+            </div>
+            <div class="column">
+                <a href="https://www.amazon.co.uk/ap/signin?clientContext=262-7672392-4357339&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.co.uk%2Fgp%2Fvideo%2Fdetail%2Famzn1.dv.gti.6831785e-1ef4-464c-96e6-072fd1d023a1%3Fref_%3Ddv_auth_ret%26autoplay%3D1&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&accountStatusPolicy=P1&openid.assoc_handle=gbflex&openid.mode=checkid_setup&language=en_GB&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"><img src="Images/Wrath-of-man.jpg" alt="Gift" class="images"></a>
+                <p>Wrath of man</p>
+            </div>
+            <div class="column">
+                <a href="https://www.youtube.com/watch?v=2jJM3eGZJdE"><img src="Images/venom.jpg" alt="venom" class="images"></a>
+                <p>Venom</p>
+            </div>
+            <div class="column">
+                <a href="https://www.youtube.com/watch?v=-2r11mLNraM"><img src="Images/F9.jpg" alt="Fast and furious 9" class="images"></a>
+                <p>Fast and Furious 9</p>
+            </div>
+            <div class="column">
+                <a href="https://www.youtube.com/watch?v=bLaKpGUsMmU"><img src="Images/DoctorStrange.jpg" alt="DoctorStrange" class="images"></a>
+                <p>DoctorStrange</p>
+            </div>
+            <div class="column">
+                <a href="https://www.youtube.com/watch?v=BPS2_D_R8TI"><img src="Images/CaptainMarvel.jpg" alt="CaptainMarvel" class="images"></a>
+                <p>CaptainMarvel</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p2>Author: Movie Box<br>
+            <a href="mailto:hege@example.com">MovieBox@gmail.com</a></p2>
+    </footer>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 1300); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>
